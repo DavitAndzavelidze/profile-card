@@ -1,0 +1,140 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Reset browser default setttings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font family, hidden overflow  */
+body {
+  overflow: hidden;
+  background: #19a1ae;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Background position items to center */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Background ball styles */
+.ball__top {
+  position: absolute;
+  width: 978px;
+  height: 976px;
+  left: -300px;
+  top: -600px;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  transform: rotate(145deg);
+  z-index: -1;
+}
+.ball__bottom {
+  position: absolute;
+  width: 978px;
+  height: 976px;
+  right: -300px;
+  top: 300px;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
+/* Profile card styles */
+.profile__card {
+  position: relative;
+  width: 350px;
+  height: 374px;
+  background: #ffffff;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  border-radius: 15px;
+}
+.profile__card img {
+  border-radius: 15px 15px 0 0;
+  height: 140px;
+}
+.profile__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make horizontal line with sudo element */
+.profile__box::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #e8e9ec;
+  margin: 28px 0 24px 0;
+}
+
+/* Profile photo */
+.profile__box img {
+  width: 96px;
+  height: 96px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+/* Profile photo title */
+.profile__box h3 {
+  margin: -24px 0 8px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.profile__box span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6b7082;
+}
+
+/* Profile photo text */
+.profile__box p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6b7082;
+}
+
+/* Information about followers likes and photos */
+.info__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.info__box h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2e3349;
+}
+.info__box p {
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+}
